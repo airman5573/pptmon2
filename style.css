@@ -1,0 +1,736 @@
+/*!
+Theme Name: PPTMON
+Theme URI: https://pptmon.com/
+Author: PPTMON
+Author URI: https://pptmon.com/
+Description: MonsterCompany WordPress Theme
+Version: 1.0.8
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: pptmon
+Tags: PPT, PowerPoint, Power Point Template, Community, Blog, Adsense, Free PowerPoint template, Free Google Slides theme, Presentation template
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+PPTMON is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+
+
+@media screen and (max-width: 720px){
+	.searchbox{width: 100%!important;position: relative!important;top:0!important;right:auto!important;transform: none!important;margin: 10px 0;}
+	.downloadbox ul li a{height: 90px!important;}
+	.catlist ul li{width: 50%!important;}
+	.site-footer ul{margin: 0 0 20px 0!important;width: 100%;}
+	.site-footer ul li{width: 50%!important;float: left;}
+	.site-footer .copy{margin-top: 0!important;}
+	.main-navigation{
+		overflow-x: auto;
+	}
+	.site-branding{
+		text-align: center;
+	}
+}
+.contentbody p{
+	font-size: 19px;
+}
+figure{
+	max-width: 100%;
+	height: auto;
+}
+.contentbody h1{font-weight: 700;}
+.contentbody h2{font-size: 1.4rem;}
+.contentbody h3{font-size: 1.0rem;}
+.contentbody h4{font-size: 2.3rem;font-weight: 700;}
+.container{
+	position: relative;
+}
+.contentbody ul{
+	padding: 0 0 0 15px;
+}
+.contentbody ul li{
+	list-style-type: none;
+	position: relative;
+	padding-left: 15px;
+}
+.contentbody ul li::before{
+	content: '';
+	width: 7px;
+	height: 7px;
+	background: #d50c18;
+	display: inline-block;
+	border-radius: 50%;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 0;
+}
+body{
+	background: #fff;
+	font-size: 17px;
+}
+a{color: #d50c18;}
+a:hover{color: #d50c18;transition-duration: 0.3s;}
+.site-header{
+	background: #fff;
+	margin: 0 0 40px;
+	border-bottom: 1px solid #eaeaea;
+	z-index: 9;
+	position: relative;
+}
+.site-branding{
+	padding: 30px 0;
+}
+.single iframe{
+	/* height: 493px; */
+	width: 100%;
+}
+h1{
+	font-size: 2.3rem;
+}
+img.custom-logo{width: auto;height: 35px!important;}
+.site-navigation{
+	position: relative;
+}
+
+.searchbox{
+	position: absolute;
+	right: 15px;
+	top: 50%;
+	transform: translateY(-50%);
+	display: inline-block;
+	width: 265px;
+	text-align: right;
+}
+.searchbox p{
+	color: #888;
+	text-align: center;
+	font-size: 11px;
+	margin: 0 0 8px;
+}
+.searchbox form{position: relative;}
+.searchbox input{
+	width: 100%;
+  padding: 0 80px 0 10px;
+  height: 30px;
+  font-size: 13px;
+	border-radius: 5px;
+	border: 1px solid #ddd;
+	outline: none;
+}
+.searchbox button{
+	right: 0;
+	top: 0;
+	cursor: pointer;
+	position: absolute;
+	color: #d50c18;
+	background: rgba(0, 0, 0, 0);
+	border: 0;
+	height: 100%;
+	font-weight: 600;
+	padding: 0;
+	width: 40px;
+	outline: none;
+}
+.site-content{
+}
+.menu-gnb-container{
+	display: block;
+	line-height: 0;
+}
+.menu-gnb-container ul.menu{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+.menu-gnb-container ul.menu li{
+	float: left;
+	margin: 0 5px;
+	position: relative;
+
+}
+.menu-gnb-container ul.menu li:hover ul.sub-menu{
+	position: absolute;
+	left: 0;
+	top: 45px;
+	display: inline-block;
+	min-width: 200px;
+	background: #fff;
+	z-index: 3;
+	padding: 0;
+	box-shadow: 0 0 4px rgba(25,25,25,0.1);
+	padding: 15px 20px;
+	border-radius: 5px;
+}
+.menu-gnb-container ul.menu li:hover ul.sub-menu li{
+	list-style-type: none;
+	float: none;
+	margin: 0 -20px;
+	display: block;
+}
+.menu-gnb-container ul.menu li:hover ul.sub-menu li a{
+	padding: 10px 20px!important;
+  font-size: 13px;
+  width: 100%;
+  position: relative;
+  color: #212529;
+  font-weight: 400;
+}
+.menu-gnb-container ul.menu li:hover ul.sub-menu li a::before{
+	content: '';
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background: #eee;
+	margin: 0 10px 0 0;
+}
+.menu-gnb-container ul.menu li:hover ul.sub-menu li.mc-red a::before{background: #d50c18;}
+.menu-gnb-container ul.menu li:hover ul.sub-menu li.mc-yellow a::before{background: #fbbf54;}
+.menu-gnb-container ul.menu li:hover ul.sub-menu li.mc-green a::before{background: #15c286;}
+.menu-gnb-container ul.menu li:hover ul.sub-menu li.mc-blue a::before{background: #3783ff;}
+.menu-gnb-container ul.menu li:hover ul.sub-menu li.mc-purple a::before{background: #4815aa;}
+.menu-gnb-container ul.menu li:hover ul.sub-menu li.mc-pastel a::before{background: #cefff5;}
+.menu-gnb-container ul.menu li:hover ul.sub-menu li.mc-vivid a::before{background: #fcee21;}
+.menu-gnb-container ul.menu li:hover ul.sub-menu li.mc-white a::before{background: #fafafa;}
+.menu-gnb-container ul.menu li:hover ul.sub-menu li.mc-grey a::before{background: #aaaaaa;}
+.menu-gnb-container ul.menu li:hover ul.sub-menu li.mc-black a::before{background: #000000;}
+.menu-gnb-container ul.menu li:hover ul.sub-menu a:hover{
+	background: #f4f4f4;
+}
+.menu-gnb-container ul.menu li ul.sub-menu{
+	display: none;
+}
+.menu-gnb-container ul.menu li:first-child a{
+	padding-left: 0!important;
+}
+.menu-gnb-container ul.menu li a{
+	line-height: normal;
+	display: inline-block;
+	padding: 13px;
+	font-weight: 600;
+	font-size: 14px;
+	color: #212529;
+	white-space: nowrap;
+
+}
+.menu-gnb-container ul.menu li a:hover{
+	text-decoration: none;
+	color: #d50c18;
+}
+.menu-gnb-container ul.menu li.current-menu-item a,
+.menu-gnb-container ul.menu li.current-category-parent a,
+/*
+.menu-gnb-container ul.menu li.current-post-parent a
+*/{
+	color: #d50c18;
+}
+.itembox{
+	background: #fff;
+	cursor: pointer;
+}
+.itembox:hover{
+	border-color: #d50c18;
+}
+.itembox:hover h3{color: #d50c18;}
+.itembox h3{font-size: 17px;letter-spacing: -.3px;}
+.itembox p{font-size: 15px;color: #888;margin: 0;}
+.itembox .itemimg{
+	margin: 0 0 10px;
+	background: #eee;
+	padding-top: 56%;
+	position: relative;
+}
+.itembox .itemtext{
+	height: 120px;
+	overflow: hidden;
+}
+.itembox img{
+	width: 100%;
+	height: 100%;
+	border-radius: 5px;
+	border: 1px solid #ddd;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.itemauthor{
+	font-size: 12px;
+	border-top: 1px solid #ddd;
+	padding-top: 15px;
+}
+.pageouter{
+	text-align: center;
+}
+.wp-pagenavi{
+	display: inline-block;
+	text-align: center;
+	padding: 0 0 40px;
+	font-size: 15px;
+}
+.wp-pagenavi span.current{
+	font-weight: 600;
+	background: #d50c18;
+	color: #fff;
+}
+.wp-pagenavi a, .wp-pagenavi span{
+	border: 0;
+	background: #eee;
+	padding: 3px 10px !important;
+	border-radius: 16px;
+	color: #444;
+	font-size: 14px;
+	font-weight: 600;
+	float: left;
+}
+.site-footer{
+	background: #f5f5f5;
+	padding: 50px 0;
+	font-size: 13px;
+	margin-top: 50px;
+}
+.site-footer ul{
+	float: left;
+	list-style-type: none;
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+}
+.site-footer h5{
+	font-size: 15px;
+	color: #a1a1a1;
+}
+.site-footer ul li{
+	padding: 3px 0;
+}
+.site-footer ul li a{
+	color: #a1a1a1;
+}
+.site-footer .copy{
+	padding: 20px 0 0;
+	margin-top: 30px;
+	border-top: 1px solid #a1a1a1;
+	color: #a1a1a1;
+	font-size: 12px;
+}
+.adbox{
+	margin: 0 0 25px;
+  padding-top: 15px;
+}
+.single .page-header{
+	text-align: left;
+	background: #fff;
+	box-shadow: none;
+	margin: 0;
+	border: 0;
+	padding: 0 0 20px 0;
+}
+.page-header{
+	margin: -40px 0 40px;
+	padding: 20px 30px 25px;
+	text-align: center;
+	background: #fbfbfb;
+	border-bottom: 1px solid #eaeaea;
+}
+.page-header .adbox{
+	margin: 20px 0;
+}
+.page-header h1{
+	letter-spacing: -.8px;
+	font-size: 1.8rem;
+	position: relative;
+}
+.single .page-header::after{
+	width: 60px;
+  height: 3px;
+  background: #d50c18;
+  content: '';
+  margin-top: 22px;
+  display: block;
+}
+.page-header h1 span{
+	color: #d50c18;
+}
+.archive-description{
+	color: #888;
+	font-weight: 600;
+}
+.not-found{
+	text-align: center;
+	padding: 60px 0;
+}
+.info2box{
+	margin: 0 0 25px;
+	padding-left: 145px;
+	display: inline-block;
+	width: 100%;
+	position: relative;
+}
+.info2box p{
+	margin: 0;
+}
+.info2box img{
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 130px;
+	height: auto;
+	transform: translateY(-50%);
+}
+.catlist{
+  display: none;
+	/* display: inline-block; */
+	width: 100%;
+	margin: 10px 0 20px;
+}
+.catlist ul{
+	margin: -5px;
+	padding: 0;
+	list-style-type: none;
+}
+.catlist ul li{
+	float: left;
+	width: 25%;
+	padding: 5px;
+}
+.catlist ul li.current-cat a{
+	background: #d50c18;
+	color: #fff;
+	border-color: #d50c18;
+}
+.catlist ul li.current-cat a:hover{
+	background: #d50c18;
+	color: #fff;
+	border-color: #d50c18;
+}
+.catlist ul li a{
+	text-decoration: none;
+	border-radius: 5px;
+	padding: 10px;
+	color: #333;
+	background: #f4f4f4;
+	display: inline-block;
+	width: 100%;
+	font-size: 12px;
+	font-weight: 600;
+	text-align: center;
+	text-decoration: none!important;
+}
+.catlist ul li a:hover{
+	background: #e0e0e0;
+	transition-duration: 0.3s;
+}
+.single img{
+	max-width: 100%;
+	height: auto;
+}
+.single-tags{
+	display: inline-block;
+  width: 100%;
+	margin: 0 0 10px;
+	padding: 10px;
+	background: #f4f4f4;
+	border-radius: 5px;
+	color: #808080;
+}
+.single-tags storng{
+	margin-right: 5px;
+	font-size: 12px;
+}
+.single-tags a{
+	text-decoration: none;
+	color: #808080;
+  font-size: 12px;
+}
+.single-tags a:hover{
+	text-decoration: underline;
+}
+.downloadbox{
+	display: inline-block;
+	width: 100%;
+	margin: 20px 0;
+}
+.downloadbox ul{
+	list-style-type: none;
+	margin: 0 -10px;
+	padding: 0;
+}
+.downloadbox ul li{
+	float: left;
+	width: 50%;
+	padding: 0 10px;
+}
+.downloadbox ul li a{
+	display: inline-block;
+	width: 100%;
+	background: #ea4335;
+	color: #fff;
+	text-align: center;
+	padding: 15px;
+	border-radius: 5px;
+	font-weight: 600;
+}
+.downloadbox ul li a:hover{
+	text-decoration: none;
+	background: #ea0035;
+}
+.downloadbox ul li a.download{
+	background: #3783ff;
+	color: #fff;
+}
+.downloadbox ul li a.download:hover{
+	background: #0056ff;
+}
+.postthum{
+	display: inline-block;
+	width: 100%;
+	margin: 0 0 30px;
+}
+.postthum img{
+	width: 100%;
+	height: auto;
+}
+.sidebox{
+	padding: 20px;
+	background: #f7f7f7;
+	margin: 0 0 30px;
+}
+.sidebox h3{font-size: 19px;}
+.notfound{
+	display: inline-block;
+	width: 100%;
+	padding: 50px 0 20px 0;
+	text-align: center;
+}
+.notfound img{
+	margin: 0 0 20px;
+	max-width: 100%;
+}
+.notfound .btn{
+	background: #d50c18;
+	color: #fff;
+	text-align: center;
+	border-radius: 24px;
+	font-weight: 600;
+	padding: 4px 50px;
+  border-width: 0;
+}
+.contactbox{
+	max-width: 500px;
+	margin: 0 auto;
+}
+.contactbox form p{
+	margin: 0;
+}
+.contactbox input, .contactbox textarea{
+	border-radius: 3px;
+	border: 0;
+	background: #eee;
+	padding: 7px;
+	outline: none!important;
+	margin: 0 0 15px;
+	font-weight: 600;
+}
+input{
+	width: 100%;
+}
+textarea{
+	width: 100%;
+}
+.contactbox textarea{
+	height: 300px;
+}
+.contactbox input[type=submit]{
+	font-weight: 600;
+	cursor: pointer;
+	padding: 10px;
+	background: #252525;
+	color: #fff;
+	margin: 0;
+}
+.slider{
+	margin: -40px 0 40px;
+}
+.slider .carousel-item .container{
+	position: relative;
+	height: 100%;
+}
+.slider .carousel-item{
+	height: 250px;
+	background: #d62b36;
+	color: #eee;
+}
+.slider .carousel-item h1{
+	color: #fff;
+	font-size: 1.8rem;
+}
+.slider .slide-text{
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	padding: 0 15px;
+	max-width: 600px;
+}
+.slider img{
+	position: absolute;
+	right: 0;
+}
+.cat-item-none{
+	display: none;
+}
+div.wpcf7-response-output{
+	margin: 0;
+}
+.widget{
+	padding: 20px;
+	background: #f4f4f4;
+	border-radius: 5px;
+	margin: 0 0 25px;
+}
+.widget ul.menu{
+	display: inline-block!important;
+	width: 100%!important;
+}
+.widget ul.menu ul{
+	display: none!important;
+}
+.widget ul li{
+	float: none!important;
+	margin: 0!important;
+	padding: 0;
+	display: inline-block;
+	width: 100%;
+}
+.widget ul li a{
+	padding: 3px 0!important;
+	font-weight: normal!important;
+	font-size: 12px!important;
+}
+.widget-title{
+	font-size: 1rem;
+	color: #d50c18;
+}
+.bread_crumb {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	margin: 0 0 5px;
+}
+.bread_crumb li {
+    font-size:12px;
+    color:rgb(180,180,180);
+    float:left;
+    /*margin-right:1em;*/
+    list-style: none outside none;
+}
+.bread_crumb li:after {
+    content : '>';
+    padding-left:6px;
+    margin-right:6px;
+}
+.bread_crumb li:last-child:after {
+    content : '';
+}
+.bread_crumb li.current {
+}
+.paypalink a.plink{
+	display: inline-block;
+	padding: 8px;
+	width: 100%;
+	text-align: center;
+	background: #253B80;
+	color: #fff;
+	border-radius: 6px;
+	margin: 10px 0;
+	font-weight: 600;
+	font-size: 12px;
+}
+.paypalink a.plink:hover{
+	background: #354d9a;
+	text-decoration: none!important;
+}
+
+/* ICON */
+@font-face {
+  font-family: 'monster-icon';
+  src: url('https://pptmon.com/wp-content/themes/PPTMON/assets/fonts/icons.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.monster-icon {
+  font-family: "monster-icon";
+  font-style: normal;
+  font-weight: normal;
+  
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+  
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+  
+  /* You can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: none;
+}
+
+figure {
+  margin: 0;
+}
+
+
+
+/* Macy.js대신에 CSS Flexbox로 Responsive Layout을 잡자 */
+.itemlist {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.itemlist article {
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 20px;
+  flex-basis: 100%;
+}
+
+/* Bootstrap4 - Small */
+@media (min-width: 768px){
+  .itemlist article {
+    flex-basis: 50%;
+  }
+}
+
+/* Bootstrap4 - Middle */
+@media (min-width: 992px){
+  .itemlist article {
+    flex-basis: 33.333%;
+  }
+}
