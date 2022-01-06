@@ -11,8 +11,8 @@ get_header();
 ?>
 
 	<div id="primary" class="content-area container">
-		<main id="main" class="site-main row">
-      <div>
+		<main id="main" class="site-main">
+      <div class="row">
         <div class="col-md-12">
           <div class="adbox">
             <div align="center">
@@ -27,7 +27,7 @@ get_header();
           </div>
         </div>
       </div>
-      <div>
+      <div class="row">
         <div class="col-md-9"> <?php
           while ( have_posts() ) :
             the_post();
